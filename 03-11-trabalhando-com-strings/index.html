@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Argumentos de Função</title>
+</head>
+<body>
+    <script>
+        const name = 'Julio'
+        const age = 32
+
+        const sentence = 'olá, meu nome é ' + name + ' e eu tenho ' + age + ' anos'
+        const sentence2 = `olá, meu nome é ${name} e eu tenho ${age} anos.`
+
+        console.log(sentence)
+        console.log(sentence2)
+
+
+        const html = '\
+            <ul>\
+                <li>\
+                    ${name}\
+                </li>\
+                <li>\
+                    ${age}\
+                </li>\
+            </ul>\
+        '
+
+        const html2 = `
+            <ul>
+                <li>
+                    ${name}
+                </li>
+                <li>
+                    ${age}
+                </li>
+            </ul>
+        `
+
+        console.log(html)
+        console.log(html2)
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Argumentos de Função</title>
+</head>
+<body>
+    <script>
+        // Executa 1x depois de 5s
+        setTimeout(() => {
+            console.log('executou')
+        }, 5000)
+
+        // Faz uma execução a cada 5s
+        const interval = setInterval(() => {
+            console.log('executou')
+        }, 5000)
+
+        // Estipula por quanto tempo o setinterval deve ser executadas
+        setTimeout(() => {
+            clearInterval(interval)
+        }, 20000)
+    </script>
+</body>
+</html>

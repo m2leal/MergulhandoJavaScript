@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Argumentos de Função</title>
+</head>
+<body>
+    <script>
+        function sum (a, b) {
+            console.log(arguments[0], arguments[1])
+            return a + b
+        }
+
+        function sum2 () {
+            return arguments[0] + arguments[1]
+        }
+
+        const sum3 = (a = 0, b = 0) => a + b
+    </script>
+</body>
+</html>
