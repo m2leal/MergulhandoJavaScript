@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Criando Classes</title>
+</head>
+<body>
+    <script>
+        class Human {
+            hungry = true
+            awake = true
+
+            eat() {
+                this.hungry = false
+            }
+        }
+
+        Human.prototype.sleep = function () {
+            this.awake = false
+        }
+
+        const person = new Human()
+    </script>
+</body>
+</html>
