@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spread Operator</title>
+</head>
+<body>
+    <script>
+        const user = {
+            name: 'danielbonifacio',
+            email: 'contato@danielbonifacio.com.br'
+        }
+
+        const newUser = Object.assign({},user)
+        //ou
+        const newUser = {...user}
+
+        newUser.email = 'joao@zinho.com'
+        newUser.name = 'joaozinho123'
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spread Operator</title>
+</head>
+<body>
+    <script>
+        // 3 parametro em diante é agrupado como array 'contacts'
+        function createUser(name, age, ...contacts) {
+            return {
+                name,
+                age,
+                contacts: contacts
+            }
+        }
+    </script>
+</body>
+</html>

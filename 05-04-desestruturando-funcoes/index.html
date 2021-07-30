@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Desestruturando parâmetros e retornos de função</title>
+</head>
+<body>
+    <script>
+        function createUser({name, age, email}) {
+            return {
+                name: name,
+                age: age,
+                contact: { email: email }
+            }
+        }
+
+        const user = createUser({
+            name: 'Lucas',
+            age: 32,
+            email: 'lucas@mail.com'
+        })
+    </script>
+</body>
+</html>

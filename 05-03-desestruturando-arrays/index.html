@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>O que é desestruturação</title>
+</head>
+<body>
+    <script>
+        //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+        // Desestruturando arrays
+        const fruits = ['banana', 'morango', 'manga']
+        const [firstItem, ,thirdItem] = fruits
+
+        //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+        // Combinando desestruturação de objetos e arrays
+        const person  = {name: 'Joaquim', age: 32}
+        const person2 = {name: 'Jonas', age: 33}
+        const person3 = {name: 'João', age: 34}
+
+        const friends = [person, person2, person3]
+
+        const [,{name}] = friends
+
+        //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+        // Desestruturando arrays de arrays
+        const chart = [[1,2], [3,4], [5,6]]
+        const [ , , [x,y]] = chart
+    </script>
+</body>
+</html>
