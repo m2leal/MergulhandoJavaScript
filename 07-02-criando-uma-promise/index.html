@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Promise</title>
+</head>
+<body>
+    <script>
+        const promise = new Promise( (resolve, reject) => {
+            setTimeout(() => {
+                reject('🛑')
+                resolve('😃')
+            }, 5000)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Promise.all</title>
+</head>
+<body>
+    <script>
+        const baseUrl = 'https://jsonplaceholder.typicode.com'
+
+        async function getTodos() {
+            const firstTodo = await fetch(`${baseUrl}/todos/1`).then(res => res.json())
+
+            const secondTodo = await fetch(`${baseUrl}/todos/2`).then(res => res.json())
+
+            const thirdTodo = await fetch(`${baseUrl}/todos/3`).then(res => res.json())
+
+            return [firstTodo, secondTodo, thirdTodo]
+        }
+
+        const todos = getTodos()
+    </script>
+</body>
+</html>
