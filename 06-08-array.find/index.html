@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array.find</title>
+</head>
+<body>
+    <script>
+        const students = [
+            {name: 'Lucas',   grade: 8},
+            {name: 'Mario',   grade: 2},
+            {name: 'Jean',    grade: 10},
+            {name: 'Rogerio', grade: 6},
+            {name: 'Marcos',  grade: 5}
+        ]
+
+        // retorna o primeiro que encontrar com a condição passada
+        const specificStudent = students.find( pupil => {
+            if(pupil.name == 'Jean'){
+                return true
+            }
+        })
+
+    </script>
+</body>
+</html>

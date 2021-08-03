@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array.some e Array.every</title>
+</head>
+<body>
+    <script>
+        const guests = [
+            {name: 'Marcos',   age: 23},
+            {name: 'Angelica', age: 27},
+            {name: 'Luana',    age: 17},
+            {name: 'Leticia',  age: 45},
+            {name: 'Raphael',  age: 18}
+        ]
+
+        const guests2 = [
+            {name: 'Marcos',   age: 1},
+            {name: 'Angelica', age: 2},
+            {name: 'Luana',    age: 3},
+            {name: 'Leticia',  age: 4},
+            {name: 'Raphael',  age: 5}
+        ]
+
+        const guests3 = [
+            {name: 'Marcos',   age: 20},
+            {name: 'Angelica', age: 30},
+            {name: 'Luana',    age: 40},
+            {name: 'Leticia',  age: 50},
+            {name: 'Raphael',  age: 60}
+        ]
+
+        // existem maiores de idade na lista de convidados ?
+        const hasAdults = guests.some(guest => guest.age >= 18)
+        const hasAdults2 = guests2.some(guest => guest.age >= 18)
+
+        // todos os convidados são maiores de idade ?
+        const everyoneIsAnAdult = guests.every(guest => guest.age >= 18)
+        const everyoneIsAnAdult2 = guests3.every(guest => guest.age >= 18)
+
+        console.log(hasAdults)
+        console.log(hasAdults2)
+
+        console.log(everyoneIsAnAdult)
+        console.log(everyoneIsAnAdult2)
+    </script>
+</body>
+</html>
